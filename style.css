@@ -1,0 +1,299 @@
+/*
+REGRAS CSS PARA O PLUGIN
+*/
+
+.actcon-solicitacao-acesso-page-cadastros-php{background-color:#FFF;} 
+
+.modal{z-index: 99999}
+.mo dal{display: block;opacity: 1;overflow: visible;position: relative;}
+
+.plugin-content{padding-right: 22px;}
+.plugin-content .tab-content .tab-pane{background-color:#fff;padding: 16px;border-bottom: 1px solid #dddddd;border-left: 1px solid #dddddd;border-right: 1px solid #dddddd;border-radius: 0px 0px 4px 4px;}
+.plugin-content .caixa{border: none;/* -webkit-box-shadow: 0 0 35px 11px rgb(154 161 171 / 15%); *//* box-shadow: 0 0 35px 11px rgb(154 161 171 / 15%); */background-color: #fff;background-clip: border-box;border: 1px solid #eef2f7;border-radius: 1rem;-webkit-box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%);box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%);}
+.plugin-content .caixa .header{padding: 16px 16px 16px 16px;}
+.plugin-content .caixa .content{/* padding: 4px 16px 16px 16px; */position: relative;margin: 4px 16px 16px 16px;box-sizing: content-box;}
+
+.fundocaixa{clear:both;background: #fafbfe;padding: 32px;-webkit-box-shadow: inset 1px 1px 3px 1px rgb(0 0 0 / 10%);box-shadow: inset 1px 1px 18px 8px rgb(0 0 0 / 10%);}
+.fundocaixa h1,
+.fundocaixa h2,
+.fundocaixa h3,
+.fundocaixa h4{margin-left: 2rem;font-weight: 700;text-transform: uppercase;letter-spacing: 0.2em;line-height: 1.2;color: #343a40;}
+.fundocaixa h1{font-size: 2.4rem;}
+.fundocaixa h2{font-size: 2.0rem;}
+.fundocaixa h3{font-size: 1.6rem;}
+.fundocaixa h4{font-size: 1.2rem;width: 100%;}
+
+/* PROCESSANDO E PROCESSANDO MASK*/
+.processando_mask{/* display: flex; */justify-content: center;flex-direction: column;content: "oi";background-color: #000000cf;position: absolute;z-index: 10;width: 100%;height: 100%;color: #fff;text-align: center;top: 0;display: none;left: 0;}
+.processando .processando_mask{display: flex;}
+
+/* FORMULARIOS */
+.require.has-error .mensagem_erro{display: block!important;}
+
+.checkbox > label{margin-right:22px}
+.checkbox input[type="checkbox"]{padding:0;height: 16px;width: 17px;margin-top: 1px;overflow:hidden;}
+input[type=checkbox]:checked::before{height:18px;margin: -3px -3px;width: 20px;background-color: #e1efff;}
+input[type=checkbox]:focus{outline:none;border-color: initial;box-shadow: none;}
+
+.linha_fundo{padding:15px;}
+
+.buscaajax{max-width:400px;position: relative;}
+.buscaajax .lista_suspensa{background-color:#fff;padding: 4px;border: solid 1px #d9d9d9;position: absolute;width: 100%;z-index: 10;/* top: -35px; */}
+.buscaajax .lista_suspensa li{list-style: none;}
+
+.table-fundo-branco{background-color: #fff;}
+
+/* CLIENTES */
+.actcon-sigsa-page-clientes-php{/*background-color: #f0f0f1;*/}
+.actcon-sigsa-page-clientes-php .conteudo_aba{padding: 28px 32px;box-shadow: inset 1px 1px 12px 9px rgb(0 0 0 / 6%);}
+.cadastro_cliente .contrato{font-size:18px;}
+.cadastro_cliente .contrato ul.pasta{position: relative;overflow: hidden;margin-left: 20px;padding-top: 8px;}
+.cadastro_cliente .contrato ul.pasta > h6{padding-left: 20px;margin: 0 0 8px 0;font-weight: bold;}
+.cadastro_cliente .contrato ul.pasta:before{position: absolute;width: 1px;height: 100%;top: -18px;left: 0;/* background-color: #ff10d7; */content: "";border-left: 3px solid #a9a9a9;z-index: 0;}
+.cadastro_cliente .contrato ul.pasta > li:before{content: "";top: 12px;left: 0;width: 16px;height: 1px;/* background-color: turquoise; */border-top: 3px solid #a9a9a9;position: absolute;}
+.cadastro_cliente .contrato ul.pasta > li{z-index:1;position:relative;padding-left: 20px;}
+.logo_IMLogoCliente img{width: 130px;border-radius: 10px;border: 1px solid #cfcfcf;margin: 0 0 8px 0;max-height: 92px;-webkit-box-shadow: 0px 0px 4px 3px rgb(188 188 188 / 63%);box-shadow: 0px 0px 4px 3px rgb(188, 188, 188, 63%);}
+
+ul.table-cadastros{overflow: hidden;margin-top: 32px;}
+ul.table-cadastros li{margin: 0;padding: 0px;border: 1px solid #bfbaba;border-top: none;display: flex;}
+ul.table-cadastros > li:first-child{border: none;border-radius: 5px 5px 0 0;font-weight: bold;display: block;padding:8px;}
+ul.table-cadastros > li:last-child{border-radius:0 0 5px 5px;}
+ul.table-cadastros > li table{margin: 0;}
+
+ul.table-enderecos > li:first-child{color: #fff;background-color: #337ab7;}
+ul.table-contatos > li:first-child{color: #fff;background-color: #b73333;}
+ul.table-contratos > li:first-child{color: #fff;background-color: #007604;}
+
+/* PERFIL DO USUARIO */
+.actcon-sigsa-page-perfil-acesso-php{ background-color: #ffffff;}
+.perfis-acoes{display:flex;}
+.perfis-acoes form{margin-right:12px;}
+#permissoes .grupos{display: flex;flex-wrap: wrap;/* font-size: 12px; *//* justify-content: space-between; */}
+#permissoes .grupos .grupo{padding: 8px;border: 1px solid #efefef;margin: 4px;background-color: #f5f8ff;}
+#permissoes .grupos .grupo > div{font-weight:bold;text-align:center;/* font-size: 12px; */}
+#permissoes .grupos .grupo > span{display: block;background-color: #ffffff;margin: 0px 0 2px 0;padding: 2px;/* line-height: 22px; */border-radius: 2px;border: solid 1px #f1f1f1;}
+#permissoes .grupos .grupo > span input[type=checkbox]{-webkit-appearance: auto;height: auto;width: auto;vertical-align: top;margin: 4px;}
+#permissoes .panel-heading{display:flex; justify-content:space-between;}
+#permissoes .panel-heading > h4{line-height: 34px;}
+#permissoes .panel-heading > input{max-width:20%;}
+.form-group.require.select{}
+
+
+/* DADOS ADICIONAIS*/
+.listaSelectsOpcoes{display:flex;justify-content: flex-start;flex-wrap: wrap;align-content: flex-start;align-items: flex-start;flex-direction: row;}
+.listaSelectsOpcoes .selectOpcoes{margin: 12px;min-width: 196px;/* height: auto; */}
+.listaSelectsOpcoes .selectOpcoes .header{display:flex;justify-content:space-between;align-content: baseline;}
+.listaSelectsOpcoes .selectOpcoes .header .titulo{margin: 16px 20px 0 0;/* color: #6c757d; *//* margin-bottom: 0; */font-size: 1.4rem;font-weight: 400;/* text-transform: uppercase; */letter-spacing: .1em;}
+.selectOpcoes ul{overflow:hidden;margin: 0;}
+.selectOpcoes ul li{background-color:#f7f7f7;margin:0 0 2px 0;color:#72777c;padding:6px; width:100%;position:relative;}
+.selectOpcoes ul li a:hover{text-decoration:none;}
+.selectOpcoes ul li a.excluir{color:#b72929;width:24px;position:absolute;right:-24px;text-align: center;}
+.selectOpcoes ul li:last-child{display:none;} 
+.selectOpcoes ul li a.add{color:#b72929;display: block;text-align: center;cursor: unset;}
+.selectOpcoes ul li a.add span{color: #c7c7c7;text-align: center;width: 23px;height: 21px;background-color: white;display: block;margin: 0 auto;border-radius: 30px;font-size: 22px;font-weight: bold;display: inherit;cursor: pointer;}
+.selectOpcoes.edicao ul li{width:calc(100% - 24px);}
+.selectOpcoes.edicao ul li input,
+.selectOpcoes.edicao ul li input[disabled]{width:100%;}
+.listaSelectsOpcoes .selectOpcoes.edicao .header{background-color:#e2eff3;}
+.listaSelectsOpcoes .selectOpcoes.edicao.modificado .header{background-color:#f3e2e2;}
+.selectOpcoes.edicao ul li:last-child{display:block}
+.selectOpcoes.edicao ul li .add{opacity:1;cursor: pointer;}
+.selectOpcoes .atualizando{background-color: #e2e2e2a6;display: block;position: absolute;z-index: 1;width: 100%;height: 100%;top: 0;box-sizing: content-box;/* display: none; */}
+.selectOpcoes .atualizando i{top:calc(50% - 15px);left:calc(50% - 25px);position:absolute;}
+/* EMPRESAS */
+.listaEmpresas{}
+.listaEmpresas .empresaItem{margin: 12px;padding: 16px;display:flex;/* justify-content: space-between; */align-items: center;/* flex-basis: 15%; */cursor: pointer;}
+.listaEmpresas .empresaItem .thumb{border-radius:20px;border: 3px solid #b7b7b7;height: 38px;width: 38px;margin: 0 18px;display: flex;align-items: center;justify-content: center;overflow: hidden;}
+.listaEmpresas .empresaItem .thumb img{display:block;width: 100%;height: auto;}
+.listaEmpresas .empresaItem .NMRazaoEmpresa{margin: 0 20px;flex-basis: 20%;}
+.listaEmpresas .empresaItem .NMRazaoEmpresa h3{font-size: 1.4rem;font-weight: 400;letter-spacing: .1em;line-height: inherit;}
+.listaEmpresas .empresaItem .NUCnpjEmpresa{border: 2px solid #c3c3c3;border-radius: 20px;padding: 5px 12px;margin: 0 42px;flex-grow: 0;}
+.listaEmpresas .empresaItem .info{text-align:center;margin: 0 38px;flex-grow: 0;}
+.listaEmpresas .empresaItem .info .NMFantasiaEmpresa{font-weight:bold}
+.listaEmpresas .empresaItem .info .NMWebsiteEmpresa{}
+.listaEmpresas .empresaItem .opcoes{flex-grow: 0;margin: 0 42px;display: flex;}
+.listaEmpresas .empresaItem .opcoes .status{text-align:center;margin: 0 20px;}
+.listaEmpresas .empresaItem .opcoes .opcao{text-align:center;margin: 0 8px;padding: 0 12px;display: flex;justify-content: center;align-items: baseline;align-content: center;flex-direction: column;}
+.listaEmpresas .empresaItem .opcoes .opcao:hover i{font-size:160%;cursor: context-menu;}
+.listaEmpresas .empresaItem .opcoes .status i.fa-toggle-on{color:#0900ff;}
+.listaEmpresas .empresaItem .opcoes .status i.fa-toggle-off{color:#ff0000;}
+.listaEmpresas .empresaItem:hover{background-color:#0007a5;color:#fff;}
+#modal_cadastro_empresa .enderecos{margin-top: 48px;}
+#modal_cadastro_empresa .enderecos .content{display:flex;flex-wrap: wrap;}
+#modal_cadastro_empresa .endereco{padding: 14px 18px;border-radius:30px;display: flex;justify-content: space-between;align-items: center;margin: 0 16px 16px 0;width: fit-content;cursor: pointer;color:#333333;}
+#modal_cadastro_empresa .endereco .cor{width: 10px;height: 10px;background-color: #000;border-radius: 20px;margin-right: 16px;}
+#modal_cadastro_empresa .endereco .info{color:inherit;}
+#modal_cadastro_empresa .endereco .info .titulo{margin-top: 0;margin-bottom: .5rem;font-weight: 700;line-height: 1.2;color:inherit;}
+#modal_cadastro_empresa .endereco .info .subtitulo{/* margin-top: 0; *//* margin-bottom: .5rem; *//* font-weight: 700; */line-height: 1.2;color: #9a9a9a;}
+#modal_cadastro_empresa .endereco .icones{/* background-color: #ce0101; */margin-left: 16px;text-align: center;font-size: 16px;}
+#modal_cadastro_empresa .endereco .icone{width: 36px;height: 36px;background-color: #000;border-radius: 36px;margin-left: 2px;color: #fff;text-align: center;font-size: 16px;display: inline-block;padding: 8px 0 0 0;}
+/*Empresas > enderecos > Icones e cores */
+#modal_cadastro_empresa .endereco.administrativo .cor,
+#modal_cadastro_empresa .endereco .icone.administrativo{background-color:#0d6efd;}
+#modal_cadastro_empresa .endereco .icone.administrativo i::before{content:"\f19c";}
+#modal_cadastro_empresa .endereco.contato .cor,
+#modal_cadastro_empresa .endereco .icone.contato{background-color:#6610f2;}
+#modal_cadastro_empresa .endereco .icone.contato i::before{content:"\f007";}
+#modal_cadastro_empresa .endereco.correspondencia .cor,
+#modal_cadastro_empresa .endereco .icone.correspondencia{background-color:#35b653;}
+#modal_cadastro_empresa .endereco .icone.correspondencia i::before{content:"\f003";}
+#modal_cadastro_empresa .endereco.financeiro .cor,
+#modal_cadastro_empresa .endereco .icone.financeiro{background-color:#dc3545;}
+#modal_cadastro_empresa .endereco .icone.financeiro i::before{content:"\f0d6";}
+#modal_cadastro_empresa .endereco.geral .cor,
+#modal_cadastro_empresa .endereco .icone.geral{background-color:#ffc107;}
+#modal_cadastro_empresa .endereco .icone.geral i::before{content:"\f2ba";}
+#modal_cadastro_empresa .endereco.pedagogico .cor,
+#modal_cadastro_empresa .endereco .icone.pedagogico{background-color:#11d3bc;}
+#modal_cadastro_empresa .endereco .icone.pedagogico i::before{content:"\f19d";}
+#modal_cadastro_empresa .endereco.ti .cor,
+#modal_cadastro_empresa .endereco .icone.ti{background-color:black;}
+#modal_cadastro_empresa .endereco .icone.ti i::before{content:"\f121";}
+#modal_cadastro_empresa .endereco:hover{background-color:#666;color:#fff;}
+
+#modal_cadastro_empresa .contratos .content{display:flex;flex-wrap: wrap;}
+#modal_cadastro_empresa .contrato{padding: 14px 18px;/* border-radius:30px; */display: flex;justify-content: flex-start;align-items: center;margin: 0 16px 16px 0;width: 100%;cursor: pointer;color:#333333;}
+#modal_cadastro_empresa .contrato .icone{width: 36px;height: 36px;background-color: #000;border-radius: 36px;margin-right: 16px;color: #fff;text-align: center;font-size: 16px;padding: 8px 0 0 0;}
+#modal_cadastro_empresa .contrato .info .titulo{margin-top: 0;margin-bottom: .5rem;font-weight: 700;line-height: 1.2;color:inherit;}
+#modal_cadastro_empresa .contrato .info .subtitulo{/* margin-top: 0; *//* margin-bottom: .5rem; *//* font-weight: 700; */line-height: 1.2;color: #9a9a9a;}
+#modal_cadastro_empresa .contrato .info .subtitulo span{margin:0 12px 0 0}
+#modal_cadastro_empresa .contrato:hover{background-color:#666;color:#fff;}
+#modal_cadastro_empresa .contrato.aditivo-contratual .cor,
+#modal_cadastro_empresa .contrato.aditivo-contratual .icone{background-color:#dc3545;}
+#modal_cadastro_empresa .contrato.aditivo-contratual .icone i::before{content:"\f0a4";}
+#modal_cadastro_empresa .contrato.concessao-de-uso .cor,
+#modal_cadastro_empresa .contrato.concessao-de-uso .icone{background-color:#0d6efd;}
+
+#modal_cadastro_empresa .contatos{margin-top: 48px;}
+#modal_cadastro_empresa .contatos .content{display:flex;flex-wrap: wrap;}
+#modal_cadastro_empresa .contatos p{width:100%;margin-left:20px}
+.contatos .contato{padding: 14px 18px;/* border-radius:30px; */display: flex;justify-content: flex-start;align-items: center;margin: 0 16px 16px 0;width: fit-content;cursor: pointer;color:#333333;}
+.contatos .contato .icones{display:flex;}
+.contatos .contato .icone{height: 36px;margin-right: 8px;text-align: center;font-size: 16px;padding: 8px 0 0 0;}
+.contatos .contato .icone.gestao i::before{content:"\f2bb";color:#0d6efd;}
+.contatos .contato .icone.juridico i::before{content:"\f0e3";color:#6610f2;}
+.contatos .contato .icone.compras i::before{content:"\f0d6";color:#35b653;}
+.contatos .contato .icone.contratos i::before{content:"\f016";color:#dc3545;}
+.contatos .contato .icone.administrativo i::before{content:"\f19c";color:#ffc107;}
+.contatos .contato .icone.ti i::before{content:"\f121";}
+.contatos .contato .icone.pedagogico i::before{content:"\f19d";color:#11d3bc;}
+.contatos .contato .icone.outros i::before{color:#0d6efd;}
+
+.contatos .contato .info .titulo{margin-top: 0;margin-bottom: .5rem;font-weight: 700;line-height: 1.2;color:inherit;}
+.contatos .contato .info .subtitulo{/* margin-top: 0; *//* margin-bottom: .5rem; *//* font-weight: 700; */line-height: 1.2;color: #9a9a9a;}
+.contatos .contato:hover{background-color:#666;color:#fff;}
+/*
+
+/* modal_cadastro_empresa_endereco 
+    cadastro de telefones no modal
+    .cadastro_telefones_1
+*/
+.cadastro_telefones_1 .telefone{display:flex;padding: 3px 6px;margin-bottom: 2px;background-color: #e9e8ff;align-items: center;}
+.cadastro_telefones_1 .telefone > div{margin-right: 12px;}
+.cadastro_telefones_1 .telefone > div:first-child{min-width: 36%;}
+.cadastro_telefones_1 .telefone > div:nth-child(2){min-width:26%;}
+.cadastro_telefones_1 .telefone.new select{height:20px}
+
+.fundocaixa .actions{display: flex;width: 100%;justify-content: space-between;margin-bottom: 16px;align-content: center;align-items: baseline;}
+.fundocaixa .actions .adicionar{display: inline-block;height: fit-content;}
+
+/* CONTRATOS  contatos*/
+#contatos-contrato .content{display:flex;}
+#contatos-contrato .content .contatos{display:flex;width: 100%;flex-wrap: wrap;}
+#contatos-contrato .content .contatos .contato{display: none;}
+#contatos-contrato .content .contatos .contato.ativo{display: flex;}
+#contatos-contrato .content .editarContatos{width:100px;background: #dbdbdb;border-radius: 0 10px 10px 0;display: none;align-items: center;justify-content: center;font-size: 32px;color: #afafaf;}
+#contatos-contrato.edicao .content .contatos{width: calc(100% - 100px);display: block;}
+#contatos-contrato.edicao .content .contatos .contato{display: flex;width: 98%;padding: 4px 11px;margin: 3px 0px;}
+#contatos-contrato.edicao .content .contatos .contato.ativo{background-color:#4f94d4;color:#fff;}
+#contatos-contrato.edicao .content .editarContatos{display: flex;cursor: pointer;}
+
+.input-radio .mensagem_erro{width: 100%;text-align: left;}
+.linha_opcoes form{padding:14px 0px;display: inline-flex;width: 100%;/* clear: both; */float: right;justify-content: space-between;flex-wrap: wrap;}
+.linha_opcoes .left {display: flex;flex-wrap: wrap;}
+.linha_opcoes .left .form-group{margin-right:5px;}
+.linha_opcoes .right .form-group{margin-left:5px;}
+.linha_opcoes .right{display: flex;flex-wrap: wrap;}
+.linha_opcoes .form-group{display: block;}
+.linha_opcoes .form-group select{min-width:80px;}
+.linha_opcoes .pagination{margin: 0;}
+.linha_opcoes .pagination > li > a{padding: 5px 12px 5px;}
+.linha_opcoes .quantidade_registros .select{min-width: 62px;display: block;}
+.linha_opcoes .pagination .select{color: #23527c;background-color: #eeeeee;border-color: #dddddd;}
+.page_header .search-box{display: inline-block;float: right;margin-left: 9px;}
+.conteudo_aba{clear:both;position: relative;background: #fafbfe;padding: 32px;-webkit-box-shadow: inset 1px 1px 3px 1px rgb(0 0 0 / 10%);box-shadow: inset 1px 1px 18px 8px rgb(0 0 0 / 10%);}
+.conteudo_aba .list_projetos li{display:inline-block;margin: 0 3px 0;}
+.conteudo_aba .list_projetos li:after{content:","}
+.conteudo_aba .list_projetos li:last-child:after{content:""}
+
+.bt_salvar i{/* display:none; */font-size:14px;margin-right:4px;}
+
+.modal-dialog .pesquisa{display: flex;flex-direction: row;flex-wrap: nowrap;justify-content: space-between;}
+.modal-dialog .pesquisa input{border-radius: 3px 0px 0px 3px;border-right: 0;}
+.modal-dialog .pesquisa select{border-radius: 0px 0px 0px 0px;width: 42%;}
+.modal-dialog .pesquisa span{background-color: #e2e2e2;display: flex;flex-direction: column;justify-content: center;width: 70px;border: 1px solid;height: 34px;text-align: center;border-color: #7e8993;box-shadow: none;border-radius: 0px 3px 3px 0px;min-height: 30px;top: 0px;border-left: 0;cursor: pointer;}
+
+.modal-body ul.projetos{display:block;}
+.modal-body ul.projetos li{cursor:pointer;display: inline-block;background-color: cadetblue;color: white;padding: 5px;-webkit-border-radius: 5px;border-radius: 5px;text-transform: uppercase;margin: 2px 1px;}
+.modal-body ul.projetos li i:before{content:"\f062"}
+.modal-body ul.projetos_vinculados_local li i:before{content:"\f063"}
+
+
+#anexar_local button .fa-refresh{}
+
+.shortecode_ex{background-color: #d8d8d8;display: flex;justify-content: space-around;padding: 50px 0;}
+.shortecode_ex > div{max-width: 572px;width: 100%;}
+.shortecode{background-color: #fff;border: 1px solid #c7c7c7;-webkit-border-radius: 8px;border-radius: 8px;color: #5f5f5f;-webkit-box-shadow: 0 2px 3px 1px rgb(0 0 0 / 8%);box-shadow: 0 2px 3px 1px rgb(0 0 0 / 8%);overflow: hidden;}
+.shortecode header{padding: 10px 10px 6px;display:flex;justify-content: flex-start;border-bottom: 1px solid #dcdcdc;background-color: #0869140a;}
+.shortecode header img{max-width: 84px;height: auto;}
+.shortecode header h3{margin: 0 0 4px 10px;display: inline-flex;padding: 0 0px 0 15px;align-items: flex-end;font-size: 16px;border-left: 5px solid #d0ca00;}
+.shortecode footer{padding: 10px;border-top: 1px solid #dcdcdc;background-color: #0869140a;font-style: italic;}
+.shortecode .content{padding: 30px 16px;}
+
+.shortecode .identificador ul{display:flex;justify-content: center;}
+.shortecode .identificador #tab_identificador1{max-width: 400px; margin: 32px auto 0;}
+.shortecode .identificador #tab_identificador2{margin: 32px auto 0;}
+
+.transition,
+.selectOpcoes ul li,
+.empresaItem,
+#contatos-contrato .content .contatos .contato
+{
+-webkit-transition: all 200ms ease-in-out;
+-moz-transition: all 200ms ease-in-out;
+-ms-transition: all 200ms ease-in-out;
+-o-transition: all 200ms ease-in-out;
+transition: all 200ms ease-in-out;
+}
+
+@media (min-width: 1400px) {
+
+}
+
+@media (min-width: 993px) and (max-width:1399px) {
+    .listaEmpresas .empresaItem{justify-content:space-between;}
+    .listaEmpresas .empresaItem .NMRazaoEmpresa{margin:0;}
+    .listaEmpresas .empresaItem .NUCnpjEmpresa{margin:0;}
+    .listaEmpresas .empresaItem .info{margin:0;}
+    .listaEmpresas .empresaItem .opcoes{margin:0;}
+}
+@media (min-width: 768px) and (max-width:992px) {
+    .listaEmpresas .empresaItem{justify-content:space-between;}
+    .listaEmpresas .empresaItem .NMRazaoEmpresa{margin:0;}
+    .listaEmpresas .empresaItem .NUCnpjEmpresa{margin:0;}
+    .listaEmpresas .empresaItem .info{margin:0;display:none;}
+    .listaEmpresas .empresaItem .opcoes{margin:0;}
+}
+
+@media (min-width: 600px) and (max-width: 767px) {
+    .listaEmpresas .empresaItem{justify-content:space-between;flex-wrap:wrap;padding-left: 80px;position: relative;}
+    .listaEmpresas .empresaItem > div{margin: 0!important;}
+    .listaEmpresas .empresaItem .thumb{position: absolute;top: calc(50% - 16px);left: 16px;}
+}
+@media screen and (max-width: 599px) {
+   .listaEmpresas .empresaItem{justify-content:space-between;flex-wrap:wrap;padding-left: 80px;position: relative;}
+   .listaEmpresas .empresaItem .NUCnpjEmpresa{display:none;}
+   .listaEmpresas .empresaItem .info{display:none;}
+   .listaEmpresas .empresaItem > div{margin:0!important;}
+   .listaEmpresas .empresaItem .thumb{position: absolute;top: calc(50% - 16px);left: 16px;}
+}

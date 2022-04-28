@@ -1,0 +1,51 @@
+<form id="form_cadastro_cliente_adiciona_contrato">
+    <div class="">
+        
+        <div class="row">
+            <div class="col-md-12">
+                <div class="buscaajax" style="display:block;">
+                    <div class="input-group">
+                        <input type="text" name="busca" class="form-control" placeholder="Busque um contrato existente"/>
+                        <span class="input-group-addon">
+                            <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                        </span>
+                    </div>
+                    <div class="lista_suspensa" style="display:none;"></div>
+                </div>
+            </div>
+        </div>
+        <br>
+
+        <div class="row" style="display:none;" id="vinculo_cliente_contrato">
+            <div class="col-md-12">
+                
+                <div class="form-group require input-text">
+                    <label for="contrato">Contrato</label>    
+                    <input type="text" class="form-control" 
+                        name="contrato" placeholder="" 
+                        value=""
+                        data-id="" 
+                        disabled />
+                    <label class="control-label mensagem_erro" for="contrato" style="display:none">Preencha o campo!</label> 
+                </div>
+            
+            </div>
+            
+        </div>
+        <br>
+        
+        <div class="row" id="linha_botao_novo_contrato">
+            <div class="col-md-12">
+                <button onclick="return false;" class="btn btn-default novo-contrato">Criar um novo contrato</button>
+            </div>
+        </div>
+    </div>
+</form>
+ 
+<form id="redirect" method="POST" action="?page=actcon-sigsa/view/page-contratos.php" style="display:none;">
+    <input name="ID" value="-1"/>
+    <input name="clienteID" value=""/>
+    <input name="clienteName" value=""/>
+    <input name="urlRetorno" value=""/>
+
+</form>  

@@ -1,0 +1,126 @@
+<form id="form_cadastro_contrato_adiciona_projeto">
+    <div class="">
+        
+        <div class="row">
+            <div class="col-md-12">
+                <div class="buscaajax" style="display:block;">
+                    <div class="input-group">
+                        <input type="text" name="busca" class="form-control" placeholder="Busque o projeto"/>
+                        <span class="input-group-addon">
+                            <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                        </span>
+                    </div>
+                    <div class="lista_suspensa" style="display:none;"></div>
+                </div>
+            </div>
+        </div>
+        <br>
+
+        <div class="row" style="display:none;" id="vinculo_contrato_projeto">
+            <div class="col-md-12">
+                
+                <div class="form-group require input-text">
+                    <label for="projeto">Projeto</label>    
+                    <input type="text" class="form-control" 
+                        name="projeto" placeholder="" 
+                        value=""
+                        data-id="" 
+                        disabled />
+                    <label class="control-label mensagem_erro" for="projeto" style="display:none">Preencha o campo!</label> 
+                </div>
+            
+            </div>
+
+            <div class="col-md-4">
+                <div class="form-group require input-text">
+                    <label for="inicioProjeto">Data início do projeto</label>    
+                    <input type="text" class="form-control inicioProjeto datepicker" name="inicioProjeto" placeholder=""/>
+                    <label class="control-label mensagem_erro" for="inicioProjeto" style="display:none">Preencha o campo!</label> 
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group require input-text">
+                    <label for="terminoProjeto">Data término do projeto</label>    
+                    <input type="text" class="form-control terminoProjeto datepicker" name="terminoProjeto" placeholder=""/>
+                    <label class="control-label mensagem_erro" for="terminoProjeto" style="display:none">Preencha o campo!</label> 
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group require select">
+                    <label for="situacaoContratoProjeto" class="control-label">Situação do projeto no contrato</label>
+                    <select class="form-control" name="situacaoContratoProjeto">
+                        <option value="">Selecione</option>
+                        {:situacaoContratoProjeto}
+                    </select>
+                    <label class="control-label mensagem_erro" for="situacaoContratoProjeto" style="display:none">Selecione uma opção!</label>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="form-group require select">
+                    <label for="gestaoSolicitacaoAcesso" class="control-label">Gestão de solicitação de acesso</label>
+                    <select class="form-control" name="gestaoSolicitacaoAcesso">
+                        <option value="">Selecione</option>
+                        <option value="1">Usar</option>
+                        <option value="0">Não Usar</option>
+                        <option value="2">Definir na chave de autenticação</option>
+                    </select>
+                    <label class="control-label mensagem_erro" for="gestaoSolicitacaoAcesso" style="display:none">Selecione uma opção!</label>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group require select">
+                    <label for="usoPerfilPadrao" class="control-label">Perfil padrão</label>
+                    <select class="form-control" name="usoPerfilPadrao">
+                        <option value="">Selecione</option>
+                        <option value="1">Usar</option>
+                        <option value="0">Não Usar</option>
+                        <option value="2">Definir na chave de autenticação</option>
+                    </select>
+                    <label class="control-label mensagem_erro" for="usoPerfilPadrao" style="display:none">Selecione uma opção!</label>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group require select">
+                    <label for="usoLocalPadrao" class="control-label">Local padrão</label>
+                    <select class="form-control" name="usoLocalPadrao">
+                        <option value="">Selecione</option>
+                        <option value="1">Usar</option>
+                        <option value="0">Não Usar</option>
+                        <option value="2">Definir na chave de autenticação</option>
+                    </select>
+                    <label class="control-label mensagem_erro" for="usoLocalPadrao" style="display:none">Selecione uma opção!</label>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group require select">
+                    <label for="cadastroEstudante" class="control-label">Cadastro de estudantes</label>
+                    <select class="form-control" name="cadastroEstudante">
+                        <option value="">Selecione</option>
+                        <option value="1">Permitir</option>
+                        <option value="0">Não Permitir</option>
+                    </select>
+                    <label class="control-label mensagem_erro" for="cadastroEstudante" style="display:none">Selecione uma opção!</label>
+                </div>
+            </div>
+            
+        </div>
+        <br>
+        
+        <div class="row" id="linha_botao_novo_projeto">
+            <div class="col-md-12">
+                <button onclick="return false;" class="btn btn-default novo-projeto">Criar um novo projeto</button>
+            </div>
+        </div>
+    </div>
+</form>
+ 
+<form id="redirect" method="POST" action="?page=actcon-sigsa/view/page-projetos.php" style="display:none;">
+    <input name="ID" value="-1"/>
+    <input name="contratoID" value=""/>
+    <input name="contratoCodigo" value=""/>
+    <input name="contratoDescricao" value=""/>
+    <input name="contratoInicio" value=""/>
+    <input name="contratoTermino" value=""/>
+    <input name="urlRetorno" value=""/>
+</form>  
